@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Premiere League Teams</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="description" content="Premiere Ballpedia App" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+   <!--Favorite and delete button-->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red darken-4 ccard" id="save" style="border-radius: 200px;">
+      <i class="material-icons" id="fav-icon">favorite</i>
+    </a>
+  </div>
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large white ccard" id="delete" style="border-radius: 200px;">
+      <i class="material-icons red-text darken-4" id="fav-icon">delete</i>
+    </a>
+  </div>
+  <!--End of Favorite and delete button-->
+
+  <!-- Navbar -->
+  <nav class="black cnav-detail" role="navigation">
+    <div class="nav-wrapper container">
+      <a href="./index.html" class="brand-logo" id="logo-container">
+        <h6 class="cnav-text">
+          <b>Premiere</b> Ballpedia
+        </h6>
+      </a>
+        <a href="./index.html" class="sidenav-trigger cnav-text" data-target="nav-mobile" id="btnBack">
+        <i class="small material-icons">arrow_back</i>
+        </a>
+      <ul class="topnav right hide-on-med-and-down"></ul>
+    </div>
+  </nav>
+  <!-- End of Navber -->
+
+  <!--API Data Team Detail-->
+  <div class="container" id="body-content">
+    <div class="row">
+      <div class="col s12 center-align" style="margin-top: 200px;">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+               </div>
+                <div class="gap-patch">
+                <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End of API Data Team Detail-->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/idb.js"></script>
+  <script src="js/noback.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/sw_detail.js"></script>
+
+</body>
